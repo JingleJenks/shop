@@ -25,7 +25,6 @@ function showProduct(product) {
     const clone = template.cloneNode(true);
 
 
-
     // 3.change the content 
     clone.querySelector("a").setAttribute("href", "product.html?id=" + product.id);
     clone.querySelector(".label").textContent = `${product.articletype} | ${product.brandname}`;
