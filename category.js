@@ -9,15 +9,6 @@ fetch(subCat)
         showSubList(data);
     })
 
-
-fetch(subCat)
-    .then(function (res) {
-        return res.json();
-    })
-    .then(function (data) {
-        showSubList(data);
-    })
-
 function showSubList(data) {
     console.log(data);
     data.forEach(showSub);
